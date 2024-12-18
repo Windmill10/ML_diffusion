@@ -16,6 +16,15 @@ ch_to_en = {
 # Use absolute paths
 base_dir = os.path.dirname(os.path.abspath(__file__))
 image_paths = {
+<<<<<<< HEAD
+    '紅嘴黑鵯': './picture/blackbulbul.jpeg',
+    '白頭翁': './picture/white.jpeg',
+    '大卷尾': './picture/bladro.jpeg',
+    '樹鵲': './picture/tree.jpeg',
+    '五色鳥': './picture/color.jpeg',
+    '麻雀': './picture/sparrow.jpeg',
+    '綠繡眼': './picture/green.jpeg'
+=======
     '紅嘴黑鵯': os.path.join(base_dir, 'picture/blackbulbul.jpeg'),
     '白頭翁': os.path.join(base_dir, 'picture/white.jpeg'),
     '大卷尾': os.path.join(base_dir, 'picture/bladro.jpeg'),
@@ -23,6 +32,7 @@ image_paths = {
     '綠繡眼': os.path.join(base_dir, 'picture/green.jpeg'),
     '五色鳥': os.path.join(base_dir, 'picture/color.jpeg'),
     '麻雀': os.path.join(base_dir, 'picture/sparrow.jpeg')
+>>>>>>> e8db2134ad755c40f3a968540c4637a6c346a7b1
 }
 audio_paths = {
     '紅嘴黑鵯': os.path.join(base_dir, 'sample_audio/black.mp3'),
