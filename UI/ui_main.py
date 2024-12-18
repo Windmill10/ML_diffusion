@@ -29,7 +29,7 @@ image_paths = {
 }
 
 audio_paths = {
-    '紅嘴黑鵯': os.path.join(audio_dir, 'black.mp3'),
+    '紅嘴黑鵯': os.path.join(audio_dir, 'black.wav'),
     '白頭翁': os.path.join(audio_dir, 'white.mp3'),
     '大卷尾': os.path.join(audio_dir, 'bladro.mp3'),
     '樹鵲': os.path.join(audio_dir, 'tree.mp3'),
@@ -44,7 +44,7 @@ if selected_option:
     st.image(image_paths[selected_option], caption=selected_option)
     audio_file_path = audio_paths[selected_option]
     with open(audio_file_path, "rb") as audio_file:
-        st.audio(audio_file.read(), format='audio/mp3')
+        st.audio(audio_file.read(), format='audio/wav')
 ckpt_name = ch_to_en[selected_option]
 seed = st.number_input("Enter seed number (0~2)", value=0, min_value=0, max_value=2)
 # Add calculate button
