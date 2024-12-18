@@ -7,10 +7,12 @@ import importlib
 import audio_diffusion_pytorch
 importlib.reload(audio_diffusion_pytorch)
 
-sys.path.append("../audio-diffusion-pytorch-trainer-main")
+
+sys.path.append("../audio_diffusion_pytorch_trainer_main")
 
 from main import module_base
 from audio_diffusion_pytorch import AudioDiffusionModel, UniformDistribution, VSampler, LinearSchedule
+
 
 
 def generate_audio(species: str, seed):
@@ -38,6 +40,7 @@ def generate_audio(species: str, seed):
     # Load the checkpoint with the audio diffusion model instance
     model = module_base.Model.load_from_checkpoint(
         checkpoint_path=f'ckpts/{species}.ckpt',
+
         lr=1e-4,
         lr_beta1=0.95,
         lr_beta2=0.999,

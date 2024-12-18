@@ -22,7 +22,10 @@ def terminate_gracefully(process):
         return False
 
 def send_email_notification(subject, body):
-    EMAIL_ADDRESS = os.getenv('GMAIL_USER')
+
+    """Send email notification using Gmail SMTP"""
+    EMAIL_ADDRESS = os.getenv('GMAIL_USER')  
+
     EMAIL_PASSWORD = os.getenv('GMAIL_APP_PASSWORD')
     
     msg = EmailMessage()

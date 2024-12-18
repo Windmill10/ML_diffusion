@@ -6,3 +6,6 @@
 
 # Conditional Diffusion
 * [Github](https://github.com/TeaPearce/Conditional_Diffusion_MNIST)
+
+# BirdNET Analyzer
+* [Github](https://github.com/kahst/BirdNET-Analyzer)
